@@ -1,9 +1,10 @@
 .container{
     width: 400px;
-    height: 80vh;
-    background-color: var(--blue-2);
+    height: 65vh;
+    background-color: rgb(34, 185, 255);
     border-radius: 20px;
-    box-shadow: 10px 10px 10px var(--shadow-dark);
+    border: 2px solid black;
+    box-shadow: 0 0 60px black;
     
 }
 
@@ -29,6 +30,7 @@
     z-index: 1;
     width: 100%;
     height: 100%;
+    
     /* background-color: var(--shadow-dark); */
 
     display: flex;
@@ -40,8 +42,8 @@
 .location{
     color: black;
     text-align: center;
-    font-size: 1.2em;
-    font-weight: 600;
+    font-size: 25px;
+    font-weight: bold;
     
 
 }
@@ -49,20 +51,36 @@
 .temperature{
     color: black;
     text-align: center;
-    font-size: 4.0em;
-    font-weight: 900;
+    font-size: 80px;
+    font-weight: 1000;
+}
+
+
+
+.lower-data{
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 50%;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    padding: 1em;
+
+    display: flex;
+    flex-direction: column;
 }
 
 .more-info-label{
-    color: white;
+    color: black;
+    font-weight: 1000;
 }
 
 .more-info-container{
     flex: 1;
-    background-color: var(--shadow-light);
-    border-bottom-left-radius:20px ;
-    border-bottom-right-radius: 20px;
+    background-color: rgba(0, 0, 0, .3);
+    border-radius: 20px;
     margin-top: 1em;
+    border: 1px solid black;
 
     display: flex;
     flex-direction: row;
@@ -81,6 +99,7 @@
 
 .info-block-label{
     width: 50%;
+
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -94,6 +113,8 @@
 
 .info-block-value{
     width: 50%;
+    font-weight: 800;
+
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -101,18 +122,7 @@
 }
 
 
-.lower-data{
-    position: relative;
-    overflow: hidden;
-    width: 100%;
-    height: 50%;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
-    padding: 1em;
 
-    display: flex;
-    flex-direction: column;
-}
 
 
 
@@ -122,12 +132,14 @@
 }
 
 .search input{
-    background-color: brown;
-    outline: nome;
-    border: none;
-    border-radius: 20px;
+    background-color: white;
+    height: 35px;
+    border: 2px solid black;
+    border-radius: 10px;
     padding: 1em;
     color: black;
-    font-size: 0.8em;
+    font-size: .8em;
+    font-weight: 800;
     text-align: center;
+    box-sizing: border-box;
 }

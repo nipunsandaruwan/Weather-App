@@ -13,11 +13,12 @@ export class AppComponent implements OnInit{
 
   }
 
-  cityName:string='Sri Lanka';
+  cityName:string='';
   weatherData?: weatherData;
   
   ngOnInit(): void {
-    this.getWeatherData(this.cityName);
+    this.getWeatherData('Sri Lanka');
+    // this.getWeatherData(this.cityName);
   }
   title = 'weatherApp';
 
